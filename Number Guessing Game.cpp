@@ -1,12 +1,12 @@
 #include <iostream>
-#include <cstdlib>  // For rand() and srand()
-#include <ctime>    //For the time() function
+#include <cstdlib>  
+#include <ctime>   
 
 int main()
 {
-  srand(static_cast<unsigned int>(time(0)));  // Initializing random seed
+  srand(static_cast<unsigned int>(time(0)));  
 
-  int secretNumber = rand() % 100 + 1;   // Generating a random number between 1 and 100
+  int secretNumber = rand() % 100 + 1;   
   int guess = 0;
 
   std::cout << "*-----------------------------------------*" << std::endl;
